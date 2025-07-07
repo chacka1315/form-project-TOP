@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Login form</title>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="./assets/odinLogo.png" alt="The odin logo">
+        <div>ODIN</div>
+    </div>
+
+    <div class="description-section">
+        <p>
+            This is not real online service ! You know you need something
+            like this in you life to help you realize your deepest dreams.
+            <span>Sign up <em>now</em> to get started.</span>
+        </p>
+        <p>You <em>know</em> you want to.</p>    
+    </div>
+
+    <div class="form-section">
+        <form action="#" method="post">
+            <h1>Let's do this !</h1>
+            <div class="left-part">
+                <div>
+                    <label for="fstName">FIRST NAME</label>
+                    <input type="text" id="fstName" name="user_first_name">
+                </div>
+                <div>
+                    <label for="enail">EMAIL</label>
+                    <input type="email" id="email" name="user_email">
+                </div>
+                <div>
+                    <label for="pswd">PASSWORD</label>
+                    <input type="password" id="pswd" name="user_password">
+                </div>
+            </div>
+
+            <div class="right-part">
+                <div>
+                    <label for="lstName"> LAST NAME</label>
+                    <input type="text" id="lstName" name="user_last_name">
+                </div>
+                <div>
+                    <label for="tel-number">PHONE NUMBER</label>
+                    <input type="number" id="tel-number" name="user_phone_number">
+                </div>
+                <div>
+                    <label for="confirm-pswd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pswd" name="user_confirm_password">
+                </div>
+            </div>
+
+            <div class="validation-part">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
