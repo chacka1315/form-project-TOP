@@ -67,9 +67,10 @@ body{
 }
 
 .logoText:hover{
-    color: var(--btn-background-color); 
-    transform: scale(1.15);
-    text-shadow: 2px 2px 2px black;
+    background: linear-gradient(90deg, #fcfcfc, 60%, var(--btn-background-color), #e75a3f);  
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
 }
 
 .logoText{
