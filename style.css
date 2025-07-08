@@ -39,8 +39,13 @@ input, button, textarea, select {
 body{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 75vw;
+    margin-left: 11vw;
+    background-color: var(--btn-background-color);
+    opacity: 0.8;
     height: calc(100vh+ 5rem);
+    box-shadow: 0px 3px 5px black;
+    
     
 }
 
@@ -135,6 +140,7 @@ width: 100%;
 .right-part > div {
     display: flex ;
     flex-direction: column;
+    width: 100%;
 }
 
 label{
@@ -145,7 +151,7 @@ label{
 input{
     border: 1px solid var(--field-border-color);
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
     height: 30px;
 }
 
