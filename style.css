@@ -165,6 +165,7 @@ cursor: pointer;
 display: inline-block;
 transition: transform 0.3s ease;
 margin-bottom: 20px;
+box-shadow:  0px 2px 5px #16181850;
 }
 
 button:hover{
