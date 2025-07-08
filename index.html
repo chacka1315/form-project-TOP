@@ -17,24 +17,27 @@
     <title>Login form</title>
 </head>
 <body>
-    <div class="logo-section">
-        <img src="./assets/odinLogo.png" alt="The odin logo">
-        <div>ODIN</div>
+    <div class="bkg-img">
+        <div>
+            <img src="./assets/odinLogo.png" alt="The odin logo">
+            <div class="logoText">ODIN</div>
+        </div>           
     </div>
 
-    <div class="description-section">
-        <p>
-            This is not real online service ! You know you need something
-            like this in you life to help you realize your deepest dreams.
-            <span>Sign up <em>now</em> to get started.</span>
-        </p>
-        <p>You <em>know</em> you want to.</p>    
-    </div>
+    <form action="#" method="post">
+        <div class="description-section">
+            <p>
+                This is not real online service ! You know you need something
+                like this in you life to help you realize your deepest dreams<br>
+                <span>Sign up <em>now</em> to get started.</span>
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
 
-    <div class="form-section">
-        <form action="#" method="post">
-            <h1>Let's do this !</h1>
+
+        <div class="form-section">
             <div class="left-part">
+                <h1>Let's do this !</h1>
                 <div>
                     <label for="fstName">FIRST NAME</label>
                     <input type="text" id="fstName" name="user_first_name">
@@ -45,10 +48,9 @@
                 </div>
                 <div>
                     <label for="pswd">PASSWORD</label>
-                    <input type="password" id="pswd" name="user_password">
+                    <input type="password" pattern=".{8,}" id="pswd" name="user_password">
                 </div>
             </div>
-
             <div class="right-part">
                 <div>
                     <label for="lstName"> LAST NAME</label>
@@ -56,19 +58,20 @@
                 </div>
                 <div>
                     <label for="tel-number">PHONE NUMBER</label>
-                    <input type="number" id="tel-number" name="user_phone_number">
+                    <input type="text" inputmode="tel" id="tel-number" name="user_phone_number">
                 </div>
                 <div>
                     <label for="confirm-pswd">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pswd" name="user_confirm_password">
+                    <input type="password" pattern=".{8,}" id="confirm-pswd" name="user_confirm_password">
                 </div>
             </div>
+        </div>
 
-            <div class="validation-part">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <span>Log in</span></p>
-            </div>
-        </form>
-    </div>
+    
+        <div class="validation-part">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a>
+        </div>
+    </form>
 </body>
 </html>

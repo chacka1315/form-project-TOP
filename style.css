@@ -1,0 +1,217 @@
+/*
+  Josh's Custom CSS Reset Modified
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+:root{
+    --font-size-logo: 4rem;
+    --font-size-text: 1.5rem;
+    --font-size-title: 2rem;
+    --font-size-form: 0.9rem;
+    --font-family-logo: "Stalinist One", system-ui, sans-serif;
+    --font-family-text: "Nunito Sans", system-ui, sans-serif;
+    --btn-background-color: #596D48;
+    --field-border-color: #E5E7EB;
+    --valid-field-color: #1a8fe4; 
+    --invalid-field-color: #c63516;
+    --padding : 40px 40px 40px 40px  
+}
+/* body styling */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: calc(100vh+ 5rem);
+    
+}
+
+.bkg-img{
+    width: 40%;
+    height: calc(100vh+4rem);
+    display: flex;
+    background-image: url(./assets/background-2.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bkg-img > div{
+    display: flex;
+    background-color: rgba(25, 23, 23, 0.5);
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;   
+}
+
+.logoText:hover{
+    color: var(--btn-background-color); 
+    transform: scale(1.15);
+    text-shadow: 2px 2px 2px black;
+}
+
+.logoText{
+    font-size: var(--font-size-logo);
+    font-family: var(--font-family-logo);
+    color: #fcfcfc;
+    font-weight:900;
+    transition: transform 0.4s ease;     
+}
+
+img[alt="The odin logo"]{
+    width: 70px;
+}
+
+
+
+form{
+    width: 60%;
+    height: 100%;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-text);
+    font-weight: 600;
+    background-color: #f5f6f9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0 100px 0;
+
+
+}
+
+.description-section{
+    padding-left: 40px;
+}
+.description-section > p:first-child{
+    margin-bottom: 20px;
+}
+
+
+
+.form-section{
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: var(--font-size-form);
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+/* background-color: white; */
+background-color:  #fcfcfc;
+box-shadow: 0px 2px 5px #16181850;
+width: 100%;
+}
+
+.form-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: var(--padding);
+}
+
+.left-part > div,
+.right-part > div {
+    display: flex ;
+    flex-direction: column;
+}
+
+label{
+    font-weight: 500;
+    font-size: var(--font-size-form);
+}
+
+input{
+    border: 1px solid var(--field-border-color);
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+.validation-part{
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+button{
+padding: 10px 70px;
+background-color: var(--btn-background-color);
+color: #E5E7EB;
+font-weight: 600;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+display: inline-block;
+transition: transform 0.3s ease;
+margin-bottom: 20px;
+}
+
+button:hover{
+padding: 8px 80px;
+background-color: white;
+color: var(--btn-background-color);
+font-weight: 600;
+transform: scale(1.1);
+border: var(--btn-background-color) 2px solid;
+}
+
+
+.validation-part  a{
+    text-decoration: none;
+    color: var(--btn-background-color);
+    cursor: pointer;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.validation-part  a:hover{
+    transform: scale(1.1); 
+}
+
+:focus{
+    outline: 0;
+    box-shadow:  0px 2px 5px #16181850;
+}
+input[type="password"]:focus{
+    border: 2px solid var(--invalid-field-color);
+}
+
+input:focus{
+    border: 2px solid var(--valid-field-color);
+}
+
+input[type="password"]:invalid{
+    border: 2px solid var(--invalid-field-color);
+}
+
+
+
+
+
+
+
+  
+
+
